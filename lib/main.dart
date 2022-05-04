@@ -1,9 +1,7 @@
 import 'package:beautifulweatherapp/screens/search_page.dart';
-import 'package:flare_flutter/flare_actor.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'WeatherBloc.dart';
-import 'WeatherModel.dart';
 import 'WeatherRepo.dart';
 
 void main() => runApp(MyApp());
