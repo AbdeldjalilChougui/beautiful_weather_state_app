@@ -46,7 +46,7 @@ class ShowWeather extends StatelessWidget {
             Container(
               width: double.infinity,
               height: 50,
-              child: FlatButton(
+              child: MaterialButton(
                 shape: new RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(10))),
                 onPressed: (){
                   BlocProvider.of<WeatherBloc>(context).add(ResetWeather());
