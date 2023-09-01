@@ -45,12 +45,10 @@ class WeatherBloc extends Bloc<WeatherEvent, WeatherState> {
 
   WeatherRepo weatherRepo;
 
-  WeatherBloc(this.weatherRepo);
+  WeatherBloc(this.weatherRepo, ) : super(WeatherIsNotSearched());
 
-  @override
   WeatherState get initialState => WeatherIsNotSearched();
 
-  @override
   Stream<WeatherState> mapEventToState(WeatherEvent event) async*{
     if(event is FetchWeather){
       yield WeatherIsLoading();
