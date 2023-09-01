@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         resizeToAvoidBottomInset: false,
         backgroundColor: Colors.grey[900],
         body: BlocProvider(
-          builder: (context) => WeatherBloc(WeatherRepo()),
+          create: (context) => WeatherBloc(WeatherRepo()),
           child: SearchPage(),
         ),
       ),
